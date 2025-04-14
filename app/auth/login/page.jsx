@@ -10,7 +10,6 @@ export default function SignIn() {
 
   const handleLogin = async ( e ) => {
     e.preventDefault();
-    console.log("Login method called.");
     try {
         await signIn("credentials", {
             phone: " ",

@@ -1,7 +1,11 @@
+'use client'
 import ProtectedPage from '@/components/auth/ProtectedPage'
-import React from 'react'
+import useMounted from '@/hooks/useMounted'
+import React, { useEffect, useState } from 'react'
 
-const DashBoard = ({children}) => {
+const layout = ({children}) => {
+
+    // TODO: Check user type if amin or moderator
 
     return (
         <div>
@@ -12,4 +16,4 @@ const DashBoard = ({children}) => {
     )
 }
 
-export default DashBoard
+export default layout

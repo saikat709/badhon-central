@@ -3,10 +3,10 @@ import "./globals.css";
 import NextAuthSessionProvider from "@/components/providers/NextAuthSessionProvider";
 import useMounted from "@/hooks/useMounted";
 
-const geistSans = Geist({
+const geistSans = Geist( {
   variable: "--font-geist-sans",
   subsets: ["latin"],
-});
+} );
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
