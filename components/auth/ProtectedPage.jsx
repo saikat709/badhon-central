@@ -8,6 +8,8 @@ const { redirect, RedirectType } = require("next/navigation")
 const ProtectedPage = ({children}) => {
     const { data: session } = useSession();
 
+    if ( !session ) return null;
+
     if ( !session?.user ){
         return redirect("/auth/login", RedirectType.replace );
     }
