@@ -1,9 +1,16 @@
 'use client'
-
 import React, { useEffect } from 'react'
-import Carousel from './_components/Carousel';
 import { useSession } from 'next-auth/react';
 import { redirect, RedirectType } from 'next/navigation';
+import HeroSection from './_components/HeroSection';
+
+
+//to do : 1. nav bar
+// 2. Slider
+// 3. Call to Action(login, register)
+// 4. Services((blood donation, blood bank, etc.) in grid style)
+// 5. Recomendations
+// 6. Footer
 
 const Home = () => {
 
@@ -16,9 +23,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='flex items-center mt-12 flex-col'>
-      <h1 className="text-4xl text-center font-bold text-red-700 mb-8">Welcome to LifeBlood</h1>
-      <Carousel />
+    <div className='flex items-center  flex-col'>
+      <HeroSection/>
         Landing Page here
       <a href='/auth/login' className='block underline text-green-900/90'> Go to login page </a>
     </div>

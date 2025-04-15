@@ -1,21 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@plugin "daisyui";
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary */
+  --color-crimson: 217, 4, 41;     /* #D90429 */
+  --color-blood: 161, 0, 0;        /* #A10000 */
+
+  /* Base */
+  --color-pure-white: 255, 255, 255;   /* #FFFFFF */
+  --color-off-white: 249, 250, 251;    /* #F9FAFB */
+  --color-light-gray: 241, 245, 249;   /* #F1F5F9 */
+  --color-cool-gray: 107, 114, 128;    /* #6B7280 */
+
+  /* Accent */
+  --color-emerald: 16, 185, 129;       /* #10B981 */
+  --color-sky-blue: 56, 189, 248;      /* #38BDF8 */
+
+  /* Text */
+  --color-text-primary: 31, 41, 55;    /* #1F2937 */
+  --color-text-secondary: 107, 114, 128; /* #6B7280 */
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+[data-theme='dark'] {
+  /* Primary (unchanged) */
+  --color-crimson: 217, 4, 41;         /* #D90429 */
+  --color-blood: 161, 0, 0;            /* #A10000 */
+
+  /* Base */
+  --color-pure-white: 31, 41, 55;      /* #1F2937 */
+  --color-off-white: 17, 24, 39;       /* #111827 */
+  --color-light-gray: 55, 65, 81;      /* #374151 */
+  --color-cool-gray: 209, 213, 219;    /* #D1D5DB */
+
+  /* Accent */
+  --color-emerald: 16, 185, 129;       /* #10B981 */
+  --color-sky-blue: 56, 189, 248;      /* #38BDF8 */
+
+  /* Text */
+  --color-text-primary: 209, 213, 219;   /* #D1D5DB */
+  --color-text-secondary: 156, 163, 175; /* #9CA3AF */
+}
+
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
