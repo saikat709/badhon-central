@@ -22,8 +22,8 @@ export default function SignIn() {
     e.preventDefault();
     try {
         await signIn("credentials", {
-            phone: " ",
-            password: " ",
+            phone: phone,
+            password: password,
             callbackUrl: "/dashboard"
         });
     } catch ( err ){
@@ -37,7 +37,7 @@ export default function SignIn() {
       <div className="bg-white shadow-lg rounded-2xl w-full max-w-md p-8">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Welcome Back</h2>
 
-        <form className="space-y-4">
+        <form className="space-y-4" method="post" onSubmit={handleLogin}>
           <div>
             <label className="block text-sm font-medium text-gray-600 mb-1">Phone Number</label>
             <input
@@ -45,6 +45,8 @@ export default function SignIn() {
               placeholder="+880 1XXXXXXXXX"
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               required
+              value={phone}
+              onChange={(e)=> setPhone(e.target.value)}
             />
           </div>
 
@@ -55,6 +57,8 @@ export default function SignIn() {
               placeholder="Enter your password"
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               required
+              value={phone}
+              onChange={(e)=> setPhone(e.target.value)}
             />
           </div>
 
