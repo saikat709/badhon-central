@@ -12,7 +12,7 @@ const useAuthentication = () => {
   useEffect(() => {
     if (status === 'loading') {
 
-        setIsLoading(true);
+      setIsLoading(true);
 
     } else if (status === 'unauthenticated') {
 
