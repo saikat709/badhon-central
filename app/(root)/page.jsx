@@ -6,6 +6,7 @@ import HeroSection from './_components/HeroSection';
 import BloodDonationButtons from './_components/BloodDonationButtons';
 import OurServices from './_components/OurServices';
 import ImpactSection from './_components/ImpactSection';
+import CallToActionSection from './_components/CallToActionSection';
 
 
 //to do : 1. nav bar
@@ -31,6 +32,7 @@ const Home = () => {
       <BloodDonationButtons/>
       <OurServices/>
       <ImpactSection/>
+      <CallToActionSection/>
       <a href='/auth/login' className='block underline text-green-900/90'> Go to login page </a>
     </div>
   )

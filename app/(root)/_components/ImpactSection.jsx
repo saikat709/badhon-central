@@ -7,11 +7,11 @@ const stats = [
   { label: "Active Volunteers", value: 700 },
   { label: "Units Nationwide", value: 120 },
 ];
-
 export default function ImpactSection() {
+
   return (
     <section className="bg-offwhite py-16 px-4 md:px-8 text-center">
-      <h2 className="text-3xl md:text-4xl font-semibold text-textprimary mb-12">
+      <h2 className="text-4xl md:text-5xl font-semibold text-textprimary mb-12">
         Our Impact So Far
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">

@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { FaHospital, FaIdCardAlt, FaSearch, FaSyringe } from "react-icons/fa";
 
 const services = [
@@ -22,13 +23,24 @@ const services = [
 ];
 
 export default function OurServices() {
+  useEffect(() => {
+    // Initialize AOS animation library if needed
+    import('aos').then((AOS) => {
+      AOS.init({
+        duration: 400,
+        easing: 'ease-out',
+        once: false
+      });
+    });
+  }, []);
   return (
     <section className="py-16 px-4 bg-lightgray ">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Offer</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-12">What We Offer</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div
+            data-aos="fade-up"
               key={index}
               className="card bg-emerald/10 shadow-sm hover:shadow-lg transition-shadow duration-300 "
             >

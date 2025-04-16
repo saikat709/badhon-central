@@ -10,8 +10,8 @@ export default function BloodDonationButtons() {
     // Initialize AOS when component mounts
     import('aos').then((AOS) => {
       AOS.init({
-        duration: 1000,
-        once: true,
+        duration: 600,
+        once: false,
       });
     });
   }, []);
