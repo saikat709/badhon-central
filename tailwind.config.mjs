@@ -8,20 +8,21 @@ export default {
   theme: {
     extend: {
       colors: {
-      crimson: 'rgb(var(--color-crimson))',       // #D90429
-        blood: 'rgb(var(--color-blood))',           // #A10000
+        crimson: 'rgba(var(--color-crimson))',     // #D90429
+        blood: 'rgba(var(--color-blood))',         // #A10000
 
-        purewhite: 'rgb(var(--color-pure-white))',  // #FFFFFF
-        offwhite: 'rgb(var(--color-off-white))',    // #F9FAFB or #111827 (dark)
-        lightgray: 'rgb(var(--color-light-gray))',  // #F1F5F9 or #374151 (dark)
-        coolgray: 'rgb(var(--color-cool-gray))',    // #6B7280 or #D1D5DB (dark)
+        purewhite: 'rgba(var(--color-pure-white))', 
+        offwhite: 'rgba(var(--color-off-white))',  
+        lightgray: 'rgba(var(--color-light-gray))', 
+        coolgray: 'rgba(var(--color-cool-gray))',   
 
-        emerald: 'rgb(var(--color-emerald))',       // #10B981
-        skyblue: 'rgb(var(--color-sky-blue))',      // #38BDF8
+        emerald: 'rgba(var(--color-emerald))',      
+        skyblue: 'rgba(var(--color-sky-blue))',     
 
-        textprimary: 'rgb(var(--color-text-primary))',     // #1F2937 or #D1D5DB
-        textsecondary: 'rgb(var(--color-text-secondary))', // #6B7280 or #9CA3AF
+        textprimary: 'rgba(var(--color-text-primary))',     
+        textsecondary: 'rgba(var(--color-text-secondary))', 
+      },
     },
-  },},
+  },
   plugins: [require("daisyui")],
 };
