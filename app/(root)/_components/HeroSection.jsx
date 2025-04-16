@@ -4,13 +4,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 import AOS from 'aos';
 
-// Import Swiper and AOS styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import 'aos/dist/aos.css';
-
+import { Slide } from "react-awesome-reveal";
 const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -52,7 +51,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="relative h-[500px] w-full overflow-hidden">
+    <div className="relative h-[550px] w-full overflow-hidden">
       {/* Background Image Slider */}
       <div className="absolute inset-0 z-0">
         <Swiper
@@ -109,30 +108,28 @@ const HeroSection = () => {
                   : 'opacity-0 translate-y-10 absolute'
               }`}
             >
+              <Slide
+               damping={0.2}
+               cascade={true}
+               direction="up"
+              >
               <h1
-                data-aos="fade-up"
-                data-aos-duration="800"
                 className="mb-6 font-bold leading-tight text-white text-4xl md:text-5xl lg:text-6xl"
               >
                 {slide.title}
               </h1>
               <p
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-duration="800"
                 className="mb-8 text-lg md:text-xl text-gray-300 max-w-xl"
               >
                 {slide.description}
               </p>
               <div
-                data-aos="fade-up"
-                data-aos-delay="400"
-                data-aos-duration="800"
               >
                 <button className="btn btn-lg bg-crimson hover:bg-blood text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                   {slide.buttonText}
                 </button>
               </div>
+              </Slide>
             </div>
           ))}
         </div>

@@ -25,6 +25,9 @@ const Home = () => {
   return (
     <div className='flex items-center  flex-col'>
       <HeroSection/>
+      <div className="h-screen">
+        this is the landing page
+      </div>
         Landing Page here
       <a href='/auth/login' className='block underline text-green-900/90'> Go to login page </a>
     </div>
