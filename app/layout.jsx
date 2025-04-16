@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme='light'>
       <NextAuthSessionProvider >
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased bg-offwhite`}
         >
           {children}
         </body>

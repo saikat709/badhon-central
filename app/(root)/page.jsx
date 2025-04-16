@@ -5,6 +5,7 @@ import { redirect, RedirectType } from 'next/navigation';
 import HeroSection from './_components/HeroSection';
 import BloodDonationButtons from './_components/BloodDonationButtons';
 import OurServices from './_components/OurServices';
+import ImpactSection from './_components/ImpactSection';
 
 
 //to do : 1. nav bar
@@ -29,6 +30,7 @@ const Home = () => {
       <HeroSection/>
       <BloodDonationButtons/>
       <OurServices/>
+      <ImpactSection/>
       <a href='/auth/login' className='block underline text-green-900/90'> Go to login page </a>
     </div>
   )

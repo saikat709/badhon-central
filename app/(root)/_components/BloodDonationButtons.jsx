@@ -17,7 +17,7 @@ export default function BloodDonationButtons() {
   }, []);
 
   return (
-    <div className="flex bg-purewhite w-full flex-col md:flex-row max-w-6xl gap-6 justify-center mx-auto my-12 px-4">
+    <div className="flex bg-offwhite w-full flex-col md:flex-row max-w-6xl gap-6 justify-center mx-auto my-12 px-4">
       {/* Donate Blood Button */}
       <Link href="/donate-blood" className="w-full md:w-1/2">
         <div
