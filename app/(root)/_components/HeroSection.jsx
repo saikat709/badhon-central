@@ -62,11 +62,7 @@ const HeroSection = () => {
             5000,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-            bulletClass: 'swiper-pagination-bullet !bg-purewhite/50 !opacity-70',
-            bulletActiveClass: 'swiper-pagination-bullet-active !bg-purewhite !opacity-100',
-          }}
+          
           loop={true}
           speed={1000}
           className="h-full w-full"
