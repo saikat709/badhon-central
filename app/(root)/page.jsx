@@ -4,6 +4,7 @@ import { useSession } from 'next-auth/react';
 import { redirect, RedirectType } from 'next/navigation';
 import HeroSection from './_components/HeroSection';
 import BloodDonationButtons from './_components/BloodDonationButtons';
+import OurServices from './_components/OurServices';
 
 
 //to do : 1. nav bar
@@ -27,6 +28,7 @@ const Home = () => {
     <div>
       <HeroSection/>
       <BloodDonationButtons/>
+      <OurServices/>
       <a href='/auth/login' className='block underline text-green-900/90'> Go to login page </a>
     </div>
   )
