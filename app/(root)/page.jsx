@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useSession } from 'next-auth/react';
 import { redirect, RedirectType } from 'next/navigation';
 import HeroSection from './_components/HeroSection';
+import BloodDonationButtons from './_components/BloodDonationButtons';
 
 
 //to do : 1. nav bar
@@ -23,12 +24,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='flex items-center  flex-col'>
+    <div>
       <HeroSection/>
-      <div className="h-screen">
-        this is the landing page
-      </div>
-        Landing Page here
+      <BloodDonationButtons/>
       <a href='/auth/login' className='block underline text-green-900/90'> Go to login page </a>
     </div>
   )
