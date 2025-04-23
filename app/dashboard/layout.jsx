@@ -2,6 +2,7 @@
 import ProtectedPage from '@/components/auth/ProtectedPage'
 import useMounted from '@/hooks/useMounted'
 import React, { useEffect, useState } from 'react'
+import SmartSidebar from './_components/SmartSidebar'
 
 const layout = ({children}) => {
 
@@ -10,7 +11,7 @@ const layout = ({children}) => {
     return (
         <div>
             <ProtectedPage>
-                {children}
+                <SmartSidebar/>
             </ProtectedPage>
         </div>
     )
